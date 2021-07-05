@@ -10,6 +10,7 @@ import Add from './Pages/Add';
 import AddSubject from './Pages/AddSubject';
 import AddStudent from './Pages/AddStudent';
 import Support from './Pages/Support';
+import "./App.css"
 
 const App = () => {
   return (
