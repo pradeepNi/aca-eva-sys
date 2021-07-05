@@ -5,12 +5,12 @@ const myStyle = {
     "align-items": 'center',
     "justify-content": 'center'
 }
-const Home = () => {
+const Add = () => {
     return (
-        <div style={myStyle}>
-            <h1>this is Home</h1>
+        <div style ={myStyle}>
+            <h1>this is Add()</h1>
         </div>
     )
 }
 
-export default Home
+export default Add
