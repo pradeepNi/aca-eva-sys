@@ -12,7 +12,7 @@ app.use('/pradeep', router);
 const PORT = process.env.PORT || 5000;
 const URL = "mongodb+srv://pradeep:passuio@cluster0.i2yya.mongodb.net/STACK?retryWrites=true&w=majority";
 
-if(process.env.NODE_ENV == 'production') {
+if(process.env.NODE_ENV === 'production') {
     app.use(express.static('frontEnd/buid'));
 }
 
