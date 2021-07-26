@@ -1,0 +1,31 @@
+.pageHead {
+    position: sticky;
+    top: 85px;
+}
+.pageHead h2{
+    margin: 0;
+    padding: 20px 15px;
+    color: #364547;
+}
+.pageHead hr{
+    margin: 0 auto;
+    border-width: 0 0 2px 0;
+    border-color: #007BFE;
+    border-style: Solid;
+    width: 98%;
+}
+.divHome {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    min-height: 40%;
+}
+.divHead {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    min-height: 20%;
+}
+h3{
+    margin: 10px;
+}

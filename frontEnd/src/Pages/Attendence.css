@@ -1,0 +1,76 @@
+.paper {
+    width: 80%;
+    margin: 7% 10%;
+    border: 1px solid white;
+    box-shadow: 3px 8px 16px 9px #F2F2F2;
+    z-index: 1;
+}
+.container {
+    width: 100%;
+    overflow-y:auto;
+    max-height: 400px;
+}
+.table {
+    width: 100%;
+    margin: auto;
+    border:2px solid #F2F2F2;
+    border-spacing: 0;
+}
+.table thead tr{
+    background: #000000;
+}
+.table-row th{
+    color: white;
+    padding: 1.5%;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+.table-row td{
+    
+    padding: 1.5%;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    
+}
+
+thead {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+tbody {
+    background-color: #FFFFFF;
+}
+thead tr {
+    padding-top: 2px;
+}
+tr:nth-child(even) {
+    background-color: #F2F2F2;
+}
+ 
+.absent-present {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.active {
+    background-color: #364547;
+}
+
+.submit {
+    margin: 20px 0 0 80%;
+    background-color: #364547;
+    color: white;
+    box-shadow: 2px 6px 12px 8px white;
+    border-radius: 5px;
+    width: 10%;
+    height: 40px;
+    cursor: pointer;
+}
+button:hover {
+    opacity: .9;
+}
