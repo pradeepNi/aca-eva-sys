@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js",
+    "start": "node server.js",
     "frontEnd install": "cd frontEnd && npm install",
     "frontEnd build": "cd frontEnd && npm build",
     "heroku-postbuild": "npm run frontEnd install && npm run frontEnd build"
