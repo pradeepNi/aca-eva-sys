@@ -13,10 +13,9 @@ app.use('/api', router);
 const PORT = process.env.PORT || 5000;
 const URL = "mongodb+srv://pradeep:passuio@cluster0.i2yya.mongodb.net/STACK?retryWrites=true&w=majority";
 
-__dirname = path.resolve();
 
 if(process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.join(__dirname,'frontEnd/build')));
+    app.use(express.static('frontEnd/build'));
 
     app.get("*", (req, res) => {
         res.sendFile(path.resolve(__dirname, "frontEnd", "build", "index.html"));
