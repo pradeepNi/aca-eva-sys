@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const URL = 'http://localhost:8000/api';
+const URL = 'https://aca-eva-sys-backend.herokuapp.com/api';
 
 export const getUser = async (info) => {
     console.log(info);
