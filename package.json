@@ -9,7 +9,7 @@
     "start": "node server.js",
     "frontEnd install": "cd frontEnd && npm install",
     "frontEnd build": "cd frontEnd && npm build",
-    "heroku-postbuild": "npm run frontEnd install && npm run frontEnd build"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontEnd && npm run build --prefix frontEnd"
   },
   "author": "",
   "license": "ISC",
