@@ -6,7 +6,7 @@ export const intialState = {
 };
 
 export const reducer = (state, action) => {
-  console.log(state, action);
+  //  (state, action);
   switch (action.type) {
     case "SIDEBAR_TOGGLE":
       return { ...state, toggle: action.payload.toggle };

@@ -43,7 +43,6 @@ function Home() {
   const varify = async () => {
     try {
       let res = await validateToken();
-      console.log(res.data);
       dispatch({
         type: "SUCC_LOGIN",
         payload: { name: res.data.name, email: res.data.email, isLogin: true },

@@ -3,7 +3,6 @@ import axios from "axios";
 const URL = "https://aca-eva-sys-backend.herokuapp.com/api";
 
 export const getUser = async (info) => {
-  console.log(info);
   return await axios.get(
     `${URL}/login?email=${info.email}&password=${info.password}`
   );

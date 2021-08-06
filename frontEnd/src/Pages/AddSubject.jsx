@@ -45,7 +45,7 @@ const AddSub = () => {
   };
 
   const addSubjectDB = async () => {
-    // console.log(val);
+    // (val);
     if (!name || !code) {
       window.alert("All fields are medotorary");
     } else {
