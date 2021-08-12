@@ -1,2 +1,10 @@
 /node_modules
 /package-lock.json
+/frontEnd/node_modules
+/frontEnd/.firebase
+/frontEnd/build
+/frontEnd/.firebaserc
+/frontEnd/.gitignore
+/frontEnd/firebase.json
+/frontEnd/README.md
+/frontEnd/package-lock.json
