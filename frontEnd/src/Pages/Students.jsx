@@ -113,40 +113,46 @@ const Students = () => {
   const classes = useStyle();
   return (
     <>
-      <input
-        type="file"
-        accept=".xlsx"
-        onChange={(e) => {
-          const file = e.target.files[0];
-          readExcel(file);
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          margin: "1% 5%",
+          flex: ".8",
+          justifyContent: "space-between",
         }}
-        style={{ marginLeft: "10%" }}
-      />
-
-      <Button
-        variant="contained"
-        color="primary"
-        style={{ marginTop: "2%" }}
-        onClick={addStsHandler}
       >
-        {showloading ? (
-          <Spinner animation="border" role="status">
-            <span className="visually-hidden">Loading...</span>
-          </Spinner>
-        ) : (
-          <span className="visually-hidden">SUBMIT</span>
-        )}
-      </Button>
+        <div style={{ display: "flex", justifyContent: "flex-start" }}>
+          <input
+            type="file"
+            accept=".xlsx"
+            onChange={(e) => {
+              const file = e.target.files[0];
+              readExcel(file);
+            }}
+          />
 
-      <Button
-        variant="contained"
-        color="primary"
-        style={{ marginTop: "2%", marginLeft: "42.5%" }}
-        component={Link}
-        to={`../${id}/AddStudent`}
-      >
-        Add Student
-      </Button>
+          <Button variant="contained" color="primary" onClick={addStsHandler}>
+            {showloading ? (
+              <Spinner animation="border" role="status">
+                <span className="visually-hidden">Loading...</span>
+              </Spinner>
+            ) : (
+              <span className="visually-hidden">SUBMIT</span>
+            )}
+          </Button>
+        </div>
+        <div style={{ display: "flex" }}>
+          <Button
+            variant="contained"
+            color="primary"
+            component={Link}
+            to={`../${id}/AddStudent`}
+          >
+            Add Student
+          </Button>
+        </div>
+      </div>
       <Paper className={classes.root}>
         <TableContainer className={classes.container}>
           <Table
@@ -158,7 +164,7 @@ const Students = () => {
               <TableRow className={classes.thead}>
                 <TableCell style={{ padding: "1.3%" }}>Sr No</TableCell>
                 <TableCell style={{ padding: "1.3%" }}>Roll No</TableCell>
-                <TableCell style={{ padding: "1.3%" }}>Student</TableCell>
+                <TableCell style={{ padding: "1.3%" }}>Name</TableCell>
                 <TableCell
                   className={classes.action}
                   style={{ padding: "1.3%" }}

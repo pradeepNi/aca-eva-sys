@@ -2,14 +2,10 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
-  "type": "module",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "frontEnd install": "cd frontEnd && npm install",
-    "frontEnd build": "cd frontEnd && npm build",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontEnd && npm run build --prefix frontEnd"
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
@@ -21,6 +17,10 @@
     "express-async-handler": "^1.1.4",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.13.2",
-    "nodemon": "^2.0.11"
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.6.3",
+    "nodemon": "^2.0.11",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0"
   }
 }

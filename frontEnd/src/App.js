@@ -5,6 +5,7 @@ import {
   Switch,
   Route,
   withRouter,
+  NavLink,
 } from "react-router-dom";
 import styled from "styled-components";
 import Home from "./Pages/Home";
@@ -48,6 +49,7 @@ export const NavBtn = styled.nav`
   align-items: center;
   margin-right: 24px;
   justify-content: flex-end;
+  border: 1px solid black;
   border-radius: 5px;
   /* width: 100vw; */
   background: #fff;
@@ -98,7 +100,66 @@ const NavHideComponent = (props) => {
   return location.pathname.match(
     /^\/(Login|Signup|forget-password|login|signup)$/
   ) ? (
-    <> </>
+    <>
+      <Navbar>
+        <div style={{ marginLeft: "100px", color: "#fff" }}>
+          <Typography variant="h6">Authentication</Typography>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "flex-end",
+            marginRight: "50px",
+          }}
+        >
+          <NavLink
+            activeStyle={{
+              color: "red",
+              marginRight: "20px",
+              textDecoration: "none",
+              cursor: "pointer",
+              padding: "0 1rem",
+              background: "#007bfe",
+              border: "2px solid black",
+              borderRadius: "5px",
+            }}
+            style={{
+              color: "white",
+              marginRight: "20px",
+              cursor: "pointer",
+              textDecoration: "none",
+              padding: "0 1rem",
+            }}
+            to="Login"
+          >
+            Login
+          </NavLink>
+          <NavLink
+            activeStyle={{
+              color: "red",
+              marginRight: "20px",
+              textDecoration: "none",
+              cursor: "pointer",
+              padding: "0 1rem",
+              background: "#007bfe",
+              border: "2px solid black",
+              borderRadius: "5px",
+            }}
+            style={{
+              color: "white",
+              marginRight: "20px",
+              cursor: "pointer",
+              textDecoration: "none",
+              padding: "0 1rem",
+            }}
+            to="Signup"
+          >
+            Sign-up
+          </NavLink>
+        </div>
+      </Navbar>
+    </>
   ) : (
     <>
       <Navbar>
@@ -115,9 +176,7 @@ const NavHideComponent = (props) => {
             />
           )}
           <div style={{ marginLeft: "30px" }}>
-            <Typography variant="h5" textcolor="#272a2b">
-              Academic Evaluation System
-            </Typography>
+            <Typography variant="h6">Academic Evaluation System</Typography>
           </div>
         </AcadEval>
         <NavBtn>

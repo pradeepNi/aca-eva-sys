@@ -1,5 +1,2 @@
-node_modules
-package-lock.json
-frontEnd/node_modules
-frontEnd/package-lock.json
-frontEnd/README.md
+/node_modules
+/package-lock.json
