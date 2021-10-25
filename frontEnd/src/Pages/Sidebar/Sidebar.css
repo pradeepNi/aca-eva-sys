@@ -1,18 +1,23 @@
 .sideBar {
-    background-color: #282A35;
-    width : 200px;
-    height : 100%;
+  background-color: #282a35;
+  width: 200px;
+  height: 100%;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
 }
 .row #icon {
-    flex: 30% 1;
-    display: grid;
-    place-items: center;
+  flex: 30% 1;
+  display: grid;
+  place-items: center;
 }
 
 .row #title {
-    flex: 70% 1;
+  flex: 70% 1;
 }
 .sidebarMenu {
-    position: sticky;
-    top: 85px;
+  position: sticky;
+  top: 85px;
 }

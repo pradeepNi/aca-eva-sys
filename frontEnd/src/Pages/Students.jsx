@@ -117,8 +117,10 @@ const Students = () => {
         style={{
           display: "flex",
           alignItems: "center",
-          margin: "1% 5%",
-          flex: ".8",
+          paddingTop: "100px",
+          // flex: ".8",
+          paddingLeft: "10px",
+          paddingRight: "10px",
           justifyContent: "space-between",
         }}
       >

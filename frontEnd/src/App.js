@@ -33,15 +33,18 @@ import { reducer, intialState } from "./Store/useReduce";
 import ForgetPass from "./Pages/ForgetPass";
 
 const Navbar = styled.div`
-  width: 100%;
+  /* width: 100%; */
   height: 75px;
   background-color: #007bfe;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  /* z-index: 1; */
 `;
 
 export const NavBtn = styled.nav`
